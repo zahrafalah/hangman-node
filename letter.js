@@ -1,5 +1,5 @@
 
-var letter = function() {
+var letter = function(value) {
     this.value = value;
     this.guessed = false;
 	if (this.value == ' ') 
@@ -12,6 +12,11 @@ var letter = function() {
         return "_ ";
     }
 }
-    
 
 exports.letter = letter;
+
+//Test
+// myLetter = new letter('a');
+// console.log(myLetter);
+// console.log(myLetter.value);
+    
